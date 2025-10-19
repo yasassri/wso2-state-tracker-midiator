@@ -47,7 +47,6 @@
                         </Export-Package>
                         <Import-Package>
                             org.apache.synapse.*,
-                            org.apache.axiom.*,
                             org.apache.commons.logging.*,
                             *;resolution:=optional
                         </Import-Package>
