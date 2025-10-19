@@ -18,10 +18,10 @@
     </properties>
 
     <dependencies>
-        <!-- WSO2 Dependencies - these will be provided by WSO2 MI at runtime -->
-        <!-- Note: These dependencies should be available from WSO2's Maven repository -->
-        <!-- For local development without WSO2 repository access, compile may fail -->
-        <!-- The compiled JAR should be deployed to WSO2 MI's lib directory -->
+        <!-- WSO2 Dependencies are not included in this POM to allow compilation without -->
+        <!-- access to WSO2's Maven repository. These dependencies (synapse-core, etc.) -->
+        <!-- will be provided by the WSO2 MI runtime environment at deployment time. -->
+        <!-- For local development with WSO2 repository access, add dependencies as shown in BUILD.md -->
         
         <dependency>
             <groupId>junit</groupId>

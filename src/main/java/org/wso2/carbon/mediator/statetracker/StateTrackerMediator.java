@@ -1,6 +1,5 @@
 package org.wso2.carbon.mediator.statetracker;
 
-import org.apache.axiom.om.OMElement;
 import org.apache.synapse.MessageContext;
 import org.apache.synapse.mediators.AbstractMediator;
 import org.apache.commons.logging.Log;
@@ -45,17 +44,15 @@ public class StateTrackerMediator extends AbstractMediator {
                 messageContext.setProperty(stateProperty, stateMap);
             }
             
-            // Track the state
+            // Track the state if both name and value are provided
             if (stateName != null && stateValue != null) {
                 stateMap.put(stateName, stateValue);
                 
                 if (log.isDebugEnabled()) {
                     log.debug("State tracked: " + stateName + " = " + stateValue);
                 }
-            }
-            
-            // Also set individual property for easy access
-            if (stateName != null && stateValue != null) {
+                
+                // Also set individual property for easy access
                 messageContext.setProperty(stateProperty + "_" + stateName, stateValue);
             }
             
