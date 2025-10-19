@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifacts>
+    <artifact name="org.wso2.carbon.mediator.statetracker" version="1.0.0" type="synapse/lib">
+        <file>target/org.wso2.carbon.mediator.statetracker-1.0.0.jar</file>
+    </artifact>
+</artifacts>
