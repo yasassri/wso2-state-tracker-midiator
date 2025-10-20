@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.wso2.carbon.mediator</groupId>
-    <artifactId>org.wso2.carbon.mediator.statetracker</artifactId>
+    <groupId>com.ycr.wso2.mediator</groupId>
+    <artifactId>com.ycr.wso2.mediator.statetracker</artifactId>
     <version>1.0.0</version>
     <packaging>bundle</packaging>
-    <name>WSO2 Carbon - State Tracker Mediator</name>
+    <name>WSO2 State Tracker Mediator</name>
     <description>Allows you to track the status of a process</description>
 
     <properties>
@@ -18,11 +18,6 @@
     </properties>
 
     <dependencies>
-        <!-- WSO2 Dependencies are not included in this POM to allow compilation without -->
-        <!-- access to WSO2's Maven repository. These dependencies (synapse-core, etc.) -->
-        <!-- will be provided by the WSO2 MI runtime environment at deployment time. -->
-        <!-- For local development with WSO2 repository access, add dependencies as shown in BUILD.md -->
-        
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -32,12 +27,7 @@
         <dependency>
 			<groupId>org.apache.synapse</groupId>
 			<artifactId>synapse-core</artifactId>
-			<version>2.1.7-wso2v60</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.axis2.wso2</groupId>
-			<artifactId>axis2</artifactId>
-			<version>1.6.1.wso2v20</version>
+			<version>4.0.0-wso2v20</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-logging</groupId>
